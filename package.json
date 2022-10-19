@@ -6,6 +6,21 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Omri Bar-Zik <obar-zik@outbrain.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obar-zik/unassign.git"
+  },
+  "keywords": [
+    "object",
+    "javascript",
+    "assign",
+    "unassign",
+    "inverse"
+  ],
+  "bugs": {
+    "url": "https://github.com/obar-zik/unassign/issues"
+  },
+  "homepage": "https://github.com/obar-zik/unassign#readme"
 }
