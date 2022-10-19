@@ -4,7 +4,8 @@
   "description": "the inverse of Object.assign",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "author": "Omri Bar-Zik <obar-zik@outbrain.com>",
   "license": "ISC",
@@ -22,5 +23,30 @@
   "bugs": {
     "url": "https://github.com/obar-zik/unassign/issues"
   },
-  "homepage": "https://github.com/obar-zik/unassign#readme"
+  "homepage": "https://github.com/obar-zik/unassign#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "eslint": "^8.25.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown",
+    "*.js": "eslint --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
 }
