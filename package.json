@@ -1,0 +1,11 @@
+{
+  "name": "unassign",
+  "version": "1.0.0",
+  "description": "the inverse of Object.assign",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
